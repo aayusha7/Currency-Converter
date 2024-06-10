@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+</head>
+
+<body>
+    <div>
+        <div class = "header-box">
+        <h1 class ="header">Currency Converter</h1>
+        </div>
+        <!-- take input from the user-->
+        <div class = "input">
+            <form action="">
+                <label for="amount" class="text"> Amount to convert: </label>
+                <input type="number" id="amount" min="0">
+            </form>
+        </div>
+
+        <!--country to convert from-->
+        <div class = "select" >
+            <label for="countryFrom">From: </label>
+            <select id="countryFrom" name="countryFrom" class = "select"></select>
+        
+        </div>
+
+        <!--country to convert to-->
+        <div class = "select">
+            <label for="countryTo">To: </label>
+            <select id="countryTo" name="countryTo" class = "select"></select>
+        </div>
+
+        <!--submit button-->
+        <div class = "calculate-box">
+            <form method="post" onsubmit="checkforblank();return false;"  >
+                
+                <button id="check-btn"class = "button"  >Calculate</button>
+            </form>
+        </div>
+
+
+
+        <div id="result" class="result">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
