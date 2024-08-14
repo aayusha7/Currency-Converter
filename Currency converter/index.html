@@ -5,40 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div>
-        <div class = "header-box">
-        <h1 class ="header">Currency Converter</h1>
-        </div>
+        <h1>Currency Converter</h1>
         <!-- take input from the user-->
-        <div class = "input">
-            <form action="">
-                <label for="amount" class="text"> Amount to convert: </label>
-                <input type="number" id="amount" min="0">
-            </form>
-        </div>
+        <form action="">
+            <label for="amount"> Amount to convert: </label>
+            <input type="number" id="amount" min="0">
+        </form>
 
         <!--country to convert from-->
-        <div class = "select" >
+        <div>
             <label for="countryFrom">From: </label>
-            <select id="countryFrom" name="countryFrom" class = "select"></select>
+            <select id="countryFrom" name="countryFrom"></select>
         
         </div>
 
         <!--country to convert to-->
-        <div class = "select">
+        <div>
             <label for="countryTo">To: </label>
-            <select id="countryTo" name="countryTo" class = "select"></select>
+            <select id="countryTo" name="countryTo"></select>
         </div>
 
         <!--submit button-->
-        <div class = "calculate-box">
+        <div>
             <form method="post" onsubmit="checkforblank();return false;"  >
                 
-                <button id="check-btn"class = "button"  >Calculate</button>
+                <button id="check-btn"  >Submit</button>
             </form>
         </div>
 
